@@ -22,5 +22,5 @@ while lives > 0:
     elif guess < chosen_number:
         print("Go higher ⬆️")
     lives -= 1
-
-print(f"You are dead now :( The number you wanted was {chosen_number}")
+if lives <= 0:
+    print(f"You are dead now :( The number you wanted was {chosen_number}")
